@@ -1,0 +1,29 @@
+
+
+def encontrar_indice1(lista, elemento):
+    indices=[]
+    for i in range(len(lista)):
+            if lista[i] == elemento:
+                indices.append(i)
+    return indices
+
+
+#ejempls
+lista = [1, 2, 4, 4, 5, 6, 7, 8, 4, 10]
+elemento = 4
+#print(encontrar_indice1(lista, elemento))
+
+for i in enumerate(lista):
+    print(i)
+    
+
+def encontrar_indice(lista, elemento):
+    indices=[]
+    for indice, valor in enumerate(lista):
+        if valor == elemento:
+            indices.append(indice)
+    return indices
+print(encontrar_indice(lista, elemento))
+
+
+
